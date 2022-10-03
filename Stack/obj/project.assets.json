@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\Stack.csproj",
+      "projectUniqueName": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\Stack.csproj",
       "projectName": "Stack",
-      "projectPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\Stack.csproj",
+      "projectPath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\Stack.csproj",
       "packagesPath": "C:\\Users\\yaloz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\obj\\",
+      "outputPath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yaloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -2,48 +2,14 @@
 
 namespace myProgramm
 {
-    class Programm
+    public class Programm
     {
         static void Main()
         {
-            //Stack<string> stackNames = new Stack<string>(5);
-            //Stack<Person> stackPeople = new Stack<Person>(12);
-            //Test1();
-            Test2();
-        }
-        public static void Test2()
-        {
-            Stack<Person> stackPeople = new Stack<Person>(12);
-            Person mike = new Person("Mike", 18,"Life goes on");
-            Person kalamity = new Person("Kalamity", 21, "To secure poeple");
-            stackPeople.Push(mike);
-            stackPeople.Push(kalamity);
-            Console.WriteLine(stackPeople.Count);
-            //Console.WriteLine(stackPeople.Pop());
-            //var stranger = stackPeople.Top();
-            //Console.WriteLine("This:" + stranger.Name);
-        }
-        public static void Test1()
-        {
-            Stack<int> stackCard = new Stack<int>(10);
-            for (int i = 0; i < 4; i++)
-                stackCard.Push(i + 1);
-            stackCard.Show();
-            //Console.WriteLine(stackCard.Pop());
-            //Console.WriteLine(stackCard.Pop());
-            //Console.WriteLine(stackCard.Top());
-            //Console.WriteLine(stackCard.Pop());
-            //Console.WriteLine(stackCard.Top());
-            //stackCard.Push(32);
-            //stackCard.Push(543);
-            //Console.WriteLine();
-            //Console.WriteLine(stackCard.Pop());
-            //Console.WriteLine(stackCard.Top());
-            //for (int i = 0; i < 11; i++)
-            //    Console.WriteLine(stackCard.Pop());
+            Console.WriteLine("Testing...");
         }
     }
-    class Stack<T>
+    public class Stack<T>
     {
         private T[] stack;
         private int position = -1;
@@ -68,7 +34,7 @@ namespace myProgramm
         public T Pop()
         {
             if(IsEmpty)
-                throw new InvalidOperationException("Переполнение стека!");
+                throw new InvalidOperationException("Стек пуст!");
             T currentElement = stack[position];
             stack[position] = default(T)!;
             position--;
@@ -80,13 +46,8 @@ namespace myProgramm
                 throw new InvalidOperationException("Стек пуст!");
             return stack[position];
         }
-        public void Show()
-        {
-            for(int i = stack.Length-1; i >= 0 ; i--)
-                Console.WriteLine(stack[i]);
-        }
     }
-    class Person
+    public class Person
     {
         public string Name { get; }
         public int Age { get; }

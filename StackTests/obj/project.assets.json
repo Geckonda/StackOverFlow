@@ -1670,6 +1670,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Stack/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Stack.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stack.dll": {}
+        }
       }
     }
   },
@@ -5962,11 +5972,17 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Stack/1.0.0": {
+      "type": "project",
+      "path": "../Stack/Stack.csproj",
+      "msbuildProject": "../Stack/Stack.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
+      "Stack >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -5978,11 +5994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj",
+      "projectUniqueName": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\StackTests\\StackTests.csproj",
       "projectName": "StackTests",
-      "projectPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj",
+      "projectPath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\StackTests\\StackTests.csproj",
       "packagesPath": "C:\\Users\\yaloz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\obj\\",
+      "outputPath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\StackTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yaloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5998,7 +6014,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\Stack.csproj": {
+              "projectPath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\Stack.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6047,7 +6067,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

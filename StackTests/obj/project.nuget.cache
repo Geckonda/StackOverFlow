@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0aBVsaGUQlcJT3Py3g1gf8xbncwkopTFOgWBU/ypsElyxzdgOP3qzs0M2RKltk1bKoaMLwRVWrIWXhjocxD51w==",
+  "dgSpecHash": "jK+tNTp5+Go84HNN571qL/DyM8Jl88dnWqTjO7OCP9y7hysk1KJBc4a+p6ZRC8nXG1mbH+rdf5fup5/T/bYGAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj",
+  "projectFilePath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\StackTests\\StackTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yaloz\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\yaloz\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
