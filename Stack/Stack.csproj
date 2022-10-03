@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\yaloz\OneDrive\Рабочий стол\C#\StackOverFlow\Stack\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\yaloz\OneDrive\Рабочий стол\C#\StackOverFlow\Stack\.editorconfig" />
+  </ItemGroup>
+
 </Project>

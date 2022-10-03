@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\Stack.csproj": {}
+    "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\Stack.csproj": {
+    "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\Stack.csproj",
-        "projectName": "Stack",
-        "projectPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\Stack.csproj",
+        "projectUniqueName": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj",
+        "projectName": "StackTests",
+        "projectPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\StackTests.csproj",
         "packagesPath": "C:\\Users\\yaloz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\Stack\\obj\\",
+        "outputPath": "C:\\Users\\yaloz\\OneDrive\\Рабочий стол\\C#\\StackOverFlow\\StackTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yaloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

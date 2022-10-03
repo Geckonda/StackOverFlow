@@ -8,8 +8,8 @@ namespace myProgramm
         {
             //Stack<string> stackNames = new Stack<string>(5);
             //Stack<Person> stackPeople = new Stack<Person>(12);
-            Test1();
-            //Test2();
+            //Test1();
+            Test2();
         }
         public static void Test2()
         {
@@ -17,9 +17,11 @@ namespace myProgramm
             Person mike = new Person("Mike", 18,"Life goes on");
             Person kalamity = new Person("Kalamity", 21, "To secure poeple");
             stackPeople.Push(mike);
-            var stranger = stackPeople.Top();
-            Console.WriteLine("This:" + stranger.Age);
-            Console.WriteLine(stackPeople.Pop());
+            stackPeople.Push(kalamity);
+            Console.WriteLine(stackPeople.Count);
+            //Console.WriteLine(stackPeople.Pop());
+            //var stranger = stackPeople.Top();
+            //Console.WriteLine("This:" + stranger.Name);
         }
         public static void Test1()
         {
@@ -49,40 +51,34 @@ namespace myProgramm
         {
             stack = new T[capacity];
         }
+        public bool IsEmpty
+        {
+            get { return position < 0; }
+        }
+        public int Count
+        {
+            get { return position+1; }
+        }
         public void Push(T element)
         {
-            if(position+1 < stack.Length)
-            {
-                position++;
-                stack[position] = element;
-            }
-            else
-            {
-                Console.WriteLine("Стек переполнен");
-                return;
-            }
+            if(position+1 == stack.Length)
+                throw new InvalidOperationException("Переполнение стека!");
+            stack[++position] = element;
         }
         public T Pop()
         {
-            if(position < 0)
-            {
-                Console.WriteLine("Стек пустой");
-                return default(T)!;
-            }
-            else
-            {
-                T currentElement = stack[position];
-                stack[position] = default(T)!;
-                position--;
-                return currentElement;
-            }
+            if(IsEmpty)
+                throw new InvalidOperationException("Переполнение стека!");
+            T currentElement = stack[position];
+            stack[position] = default(T)!;
+            position--;
+            return currentElement;
         }
         public T Top()
         {
-            if(position < 0)
-                return default(T)!;
-            else
-                return stack[position];
+            if (IsEmpty)
+                throw new InvalidOperationException("Стек пуст!");
+            return stack[position];
         }
         public void Show()
         {
