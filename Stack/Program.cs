@@ -13,8 +13,10 @@ namespace myProgramm
     {
         private T[] stack;
         private int position = -1;
-        public Stack(int capacity)
+        public readonly int capacity = 0;
+        public Stack(int capacityOfStack)
         {
+            capacity = capacityOfStack;
             stack = new T[capacity];
         }
         public bool IsEmpty
@@ -25,9 +27,13 @@ namespace myProgramm
         {
             get { return position+1; }
         }
+        public bool IsFull
+        {
+            get { return position+1 == capacity; }
+        }
         public void Push(T element)
         {
-            if(position+1 == stack.Length)
+            if(IsFull)
                 throw new InvalidOperationException("Переполнение стека!");
             stack[++position] = element;
         }
@@ -45,16 +51,6 @@ namespace myProgramm
             if (IsEmpty)
                 throw new InvalidOperationException("Стек пуст!");
             return stack[position];
-        }
-    }
-    public class Person
-    {
-        public string Name { get; }
-        public int Age { get; }
-        public string Purpose { get; }
-        public Person(string name, int age, string purpose)
-        {
-            Name = name; Age = age; Purpose = purpose; 
         }
     }
 }
