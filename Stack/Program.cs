@@ -29,7 +29,7 @@ namespace myProgramm
         }
         public bool IsFull
         {
-            get { return position+1 == capacity; }
+            get { return Count == capacity; }
         }
         public void Push(T element)
         {
