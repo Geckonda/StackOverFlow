@@ -9,6 +9,7 @@
       "StackTests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.11.0",
+          "PowerCollections": "1.0.0",
           "Stack": "1.0.0",
           "coverlet.collector": "3.1.0",
           "xunit": "2.4.1",
@@ -1090,6 +1091,11 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
+      "PowerCollections/1.0.0": {
+        "runtime": {
+          "PowerCollections.dll": {}
+        }
+      },
       "Stack/1.0.0": {
         "runtime": {
           "Stack.dll": {}
@@ -1746,6 +1752,11 @@
       "sha512": "sha512-kZZSmOmKA8OBlAJaquPXnJJLM9RwQ27H7BMVqfMLUcTi9xHinWGJiWksa3D4NEtz0wZ/nxd2mogObvBgJKCRhQ==",
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    },
+    "PowerCollections/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Stack/1.0.0": {
       "type": "project",

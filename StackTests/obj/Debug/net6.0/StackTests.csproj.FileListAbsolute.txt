@@ -103,3 +103,5 @@ D:\1Языки\C#\Stack\StackOverFlow\StackTests\obj\Debug\net6.0\refint\StackTe
 D:\1Языки\C#\Stack\StackOverFlow\StackTests\obj\Debug\net6.0\StackTests.pdb
 D:\1Языки\C#\Stack\StackOverFlow\StackTests\obj\Debug\net6.0\StackTests.genruntimeconfig.cache
 D:\1Языки\C#\Stack\StackOverFlow\StackTests\obj\Debug\net6.0\ref\StackTests.dll
+D:\1Языки\C#\Stack\StackOverFlow\StackTests\bin\Debug\net6.0\PowerCollections.dll
+D:\1Языки\C#\Stack\StackOverFlow\StackTests\bin\Debug\net6.0\PowerCollections.pdb

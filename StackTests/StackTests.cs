@@ -1,5 +1,5 @@
 using Xunit;
-using myProgramm;
+using Wintellect.PowerCollections;
 using System;
 
 
@@ -120,6 +120,26 @@ namespace StackTests
             Action act = () => stackCard.Pop();
             InvalidOperationException exception = Assert.Throws<InvalidOperationException>(act);
             Assert.Equal("Стек пуст!", exception.Message);
+        }
+        //Test Foreach
+        [Fact]
+        public void TestForEach()
+        {
+            int counter = 3;
+            Stack<int> stackCard = new Stack<int>(counter);
+            stackCard.Push(2);
+            stackCard.Push(32);
+            stackCard.Push(323);
+            int[] testArr = new int[counter];
+            int i = 0;
+            foreach (int item in stackCard)
+            {
+                testArr[i] = item;
+                i++;
+            }
+            Assert.Equal(323, testArr[0]);
+            Assert.Equal(32, testArr[1]);
+            Assert.Equal(2, testArr[2]);
         }
     }
 }

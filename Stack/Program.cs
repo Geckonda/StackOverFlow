@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace myProgramm
 {
@@ -6,10 +7,10 @@ namespace myProgramm
     {
         static void Main()
         {
-            Console.WriteLine("Testing...");
+            //Write whatever you want
         }
     }
-    public class Stack<T>
+    public class Stack<T> : IEnumerable<T>
     {
         private T[] stack;
         private int position = -1;
@@ -51,6 +52,45 @@ namespace myProgramm
             if (IsEmpty)
                 throw new InvalidOperationException("Стек пуст!");
             return stack[position];
+        }
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return (IEnumerator<T>)GetEnumerator();
+        }
+        public IEnumerator GetEnumerator()
+        {
+            return new StackEnum<T>(stack, Count);
+        }
+
+    }
+    public class StackEnum<T> : IEnumerator<T>
+    {
+
+        private T[] arr;
+        private int position;
+        public StackEnum(T[] arr, int position)
+        {
+            this.arr = arr;
+            this.position = position;
+        }
+        public T Current { get; private set; }
+
+        object IEnumerator.Current => this.arr[position]!;
+
+        public void Dispose()
+        {
+
+        }
+
+        public bool MoveNext()
+        {
+            position--;
+            return position > -1;
+        }
+
+        public void Reset()
+        {
+            position = arr.Length;
         }
     }
 }

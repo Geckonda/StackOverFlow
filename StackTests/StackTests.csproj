@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Stack\Stack.csproj" />
+    <ProjectReference Include="C:\Users\yaloz\Desktop\DevTools_lab01\PowerCollections\PowerCollections.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1671,6 +1671,16 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "PowerCollections/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/PowerCollections.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PowerCollections.dll": {}
+        }
+      },
       "Stack/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -5973,6 +5983,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "PowerCollections/1.0.0": {
+      "type": "project",
+      "path": "C:\\Users\\yaloz\\Desktop\\DevTools_lab01\\PowerCollections\\PowerCollections.csproj",
+      "msbuildProject": "C:\\Users\\yaloz\\Desktop\\DevTools_lab01\\PowerCollections\\PowerCollections.csproj"
+    },
     "Stack/1.0.0": {
       "type": "project",
       "path": "../Stack/Stack.csproj",
@@ -5982,6 +5997,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
+      "PowerCollections >= 1.0.0",
       "Stack >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
@@ -6015,6 +6031,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\yaloz\\Desktop\\DevTools_lab01\\PowerCollections\\PowerCollections.csproj": {
+              "projectPath": "C:\\Users\\yaloz\\Desktop\\DevTools_lab01\\PowerCollections\\PowerCollections.csproj"
+            },
             "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\Stack.csproj": {
               "projectPath": "D:\\1Языки\\C#\\Stack\\StackOverFlow\\Stack\\Stack.csproj"
             }
