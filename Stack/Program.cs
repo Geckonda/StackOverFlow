@@ -68,10 +68,12 @@ namespace myProgramm
 
         private T[] arr;
         private int position;
+        private int capacity;
         public StackEnum(T[] arr, int position)
         {
             this.arr = arr;
             this.position = position;
+            capacity = position;
         }
         public T Current { get; private set; }
 
@@ -90,7 +92,7 @@ namespace myProgramm
 
         public void Reset()
         {
-            position = arr.Length;
+            position = capacity;
         }
     }
 }
